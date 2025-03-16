@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true); // setLoading qo‘shildi
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products") // TO‘G‘RI URL
+    fetch("https://dummyjson.com/products") 
       .then((data) => data.json())
       .then((response) => {
-        setPosts(response.products); // `products` massivini olish
+        setPosts(response.products); // 
         setLoading(false);
       });
   }, []);
 
   if (loading) {
-    return <h2>Yuklanmoqda...</h2>; // Yaxshi UX uchun yuklanish statusi
+    return <h2>Yuklanmoqda...</h2>; 
   }
 
   return (
