@@ -3,8 +3,8 @@ import Modal from "./assets/Modal";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [selectedPost, setSelectedPost] = useState(null); // Modal uchun state
+  const [loading, setLoading] = useState();
+  const [selectedPost, setSelectedPost] = useState(); 
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
