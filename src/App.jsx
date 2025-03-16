@@ -29,14 +29,12 @@ function App() {
 
   return (
     <div>
-      {/* Navbar */}
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">Market</a>
         </div>
       </div>
 
-      {/* Product List */}
       <ul className="flex flex-wrap justify-center gap-3 bg-amber-500 pb-[70px] pt-[70px]">
         {posts.map((e) => (
           <li
