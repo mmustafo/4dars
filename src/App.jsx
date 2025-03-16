@@ -3,8 +3,8 @@ import Modal from "./assets/Modal";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState();
-  const [selectedPost, setSelectedPost] = useState(); 
+  const [loading, setLoading] = useState(true);
+  const [selectedPost, setSelectedPost] = useState(null); 
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
