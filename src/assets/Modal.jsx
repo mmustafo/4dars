@@ -15,6 +15,8 @@ function Modal({ post, onClose }) {
         <p>{post.description}</p>
         <p className="text-lg font-semibold mt-2">Narxi: {post.price}$</p>
         <p className="text-sm">Reyting: {post.rating}</p>
+        <p>{post.brand}</p>
+        <p>discountPercentage: {post.discountPercentage}</p>
         <button
           className="bg-red-95000 text-amber-400 px-4 py-2 rounded-lg mt-4"
           onClick={onClose}
